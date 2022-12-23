@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int num1;
+	printf("Enter an integer: ");
+	fflush(stdout);
+	scanf("%d", &num1);
+	printf("Sum: %d", num1);
+
+	return 0;
+}
