@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	float matrixA[5][5];
+	float transposeA[5][5];
+	int row = 5;
+	int col = 5;
+
+	printf("Enter rows and columns: ");
+	fflush(stdout);
+	scanf("%d %d", &row, &col);
+
+	printf("Enter elements of matrix: \n");
+	fflush(stdout);
+	for(int i = 0; i < row; i++){
+		for(int j = 0; j < col; j++){
+			printf("Enter element a%d%d: ", i+1, j+1);
+			fflush(stdout);
+			scanf("%f", &matrixA[i][j]);
+		}
+	}
+
+	for(int i = 0; i < row; i++){
+		for(int j = 0; j < col; j++){
+			transposeA[j][i] = matrixA[i][j];
+		}
+	}
+
+	printf("Entered Matrix: \n");
+	fflush(stdout);
+	for(int i = 0; i < row; i++){
+		for(int j = 0; j < col; j++){
+			printf("%.0f\t", matrixA[i][j]);
+		}
+		printf("\r\n");
+	}
+
+	printf("Transpose of Matrix: \n");
+	fflush(stdout);
+	for(int i = 0; i < col; i++){
+		for(int j = 0; j < row; j++){
+			printf("%.0f\t", transposeA[i][j]);
+		}
+		printf("\r\n");
+	}
+
+
+	return 0;
+}
