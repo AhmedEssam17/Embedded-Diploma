@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void reverseSentence(char arr[], int n);
+
+int main(void) {
+
+	char arr[20];
+	printf("Enter a sentence: ");
+	fflush(stdout);
+	gets(arr);
+	reverseSentence(arr, strlen(arr));
+
+	return 0;
+}
+
+void reverseSentence(char arr[], int n){
+	int index = n-1;
+	printf("%c", arr[index]);
+	if(n > 0)
+		reverseSentence(arr, n-1);
+	else
+		return;
+}
