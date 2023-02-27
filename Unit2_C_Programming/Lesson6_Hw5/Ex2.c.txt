@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+struct sDistance{
+	int feet;
+	float inch;
+};
+
+int main(void) {
+
+	struct sDistance distance[3];
+	printf("Enter information of 1st distance:\n");
+	printf("Enter feet: ");
+	fflush(stdout);
+	scanf("%d", &distance[0].feet);
+	printf("Enter inch: ");
+	fflush(stdout);
+	scanf("%f", &distance[0].inch);
+
+	printf("\n\nEnter information of 2nd distance:\n");
+	printf("Enter feet: ");
+	fflush(stdout);
+	scanf("%d", &distance[1].feet);
+	printf("Enter inch: ");
+	fflush(stdout);
+	scanf("%f", &distance[1].inch);
+
+	distance[2].feet = distance[0].feet + distance[1].feet;
+	distance[2].inch = distance[0].inch + distance[1].inch;
+
+	while (distance[2].inch >= 12.0) {
+		distance[2].inch -= 12.0;
+		++distance[2].feet;
+	}
+
+	printf("\nSum of distances = %d\'-%.1f\"", distance[2].feet, distance[2].inch);
+
+	return 0;
+}

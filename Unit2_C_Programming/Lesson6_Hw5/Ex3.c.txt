@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+struct sComplex{
+	double real;
+	double imag;
+};
+
+struct sComplex addComplex(struct sComplex first, struct sComplex second);
+
+int main(void) {
+
+	struct sComplex first, second, result;
+	printf("For 1st complex number:\n");
+	printf("Enter real and imaginary respectively: ");
+	fflush(stdout);
+	scanf("%lf", &first.real);
+	scanf("%lf", &first.imag);
+
+	printf("\nFor 2nd complex number:\n");
+	printf("Enter real and imaginary respectively: ");
+	fflush(stdout);
+	scanf("%lf", &second.real);
+	scanf("%lf", &second.imag);
+
+	result = addComplex(first, second);
+
+	printf("\nSum = %.1lf+%.1lfi", result.real, result.imag);
+
+	return 0;
+}
+
+struct sComplex addComplex(struct sComplex first, struct sComplex second){
+	struct sComplex result;
+
+	result.real = first.real + second.real;
+	result.imag = first.imag + second.imag;
+
+	return result;
+}
