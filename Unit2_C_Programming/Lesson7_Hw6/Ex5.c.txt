@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+struct employee{
+	char name[20];
+	int id;
+};
+
+int main() {
+
+	struct employee emp1 = {"Ahmed", 1};
+	struct employee emp2 = {"Essam", 2};
+
+	struct employee* arr[] = {&emp1, &emp2};
+	struct employee* (*ptr) = &arr;
+
+	printf("####Employee 1### \n");
+	printf("Employee Name: %s\n", (**ptr).name);
+	printf("Employee ID: %d\n", (**ptr).id);
+
+	*ptr++;
+
+	printf("\n####Employee 2### \n");
+	printf("Employee Name: %s\n", (**ptr).name);
+	printf("Employee ID: %d\n", (**ptr).id);
+
+	return 0;
+}

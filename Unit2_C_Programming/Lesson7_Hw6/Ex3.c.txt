@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main() {
+
+	char str[20];
+	char* ptr;
+
+	printf("Input a String: ");
+	fflush(stdout);
+	gets(str);
+
+	int i;
+	for(i = 0; i < 20; i++){
+		if(str[i] == NULL){
+			i--;
+			ptr = &str[i];
+			break;
+		}
+	}
+
+	printf("Reverse of the String: ");
+	fflush(stdout);
+
+	while(i >= 0){
+		printf("%c", *ptr);
+		i--;
+		ptr--;
+	}
+
+	return 0;
+}
