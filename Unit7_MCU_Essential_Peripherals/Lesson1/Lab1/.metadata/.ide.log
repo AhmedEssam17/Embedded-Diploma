@@ -1,0 +1,683 @@
+2023-04-29 17:08:11,717 [INFO] Activator:178 - 
+
+
+2023-04-29 17:08:11,722 [INFO] Activator:179 - !SESSION log4j initialized
+2023-04-29 17:08:43,896 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2023-04-29 17:08:43,913 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2023-04-29 17:08:43,918 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2023-04-29 17:08:43,918 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:43,919 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:43,923 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:43,939 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:43,941 [INFO] DbMcusJson:63 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:43,942 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:43,943 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:43,956 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-04-29 17:08:43,959 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,095 [INFO] RulesReader:52 - Compatibility file has been processed (209 Rules)
+2023-04-29 17:08:44,183 [INFO] MicroXplorer:564 - Detected Java Version = 1.8.0_252
+2023-04-29 17:08:44,184 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2023-04-29 17:08:44,184 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2023-04-29 17:08:44,185 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:44,185 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:44,185 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:44,185 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,185 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,185 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,186 [INFO] DbMcusJson:63 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,186 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,186 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,186 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,186 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,186 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,186 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,186 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-04-29 17:08:44,187 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,187 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,286 [INFO] MainPanel:189 - HeapMemory: 376438784
+2023-04-29 17:08:44,378 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2023-04-29 17:08:44,379 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2023-04-29 17:08:44,379 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:44,379 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:44,379 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-04-29 17:08:44,380 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,380 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,380 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,380 [INFO] DbMcusJson:63 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,380 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,380 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,380 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,381 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,381 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,381 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,381 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-04-29 17:08:44,381 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder/ => C:\Users\Lenovo\.stmcufinder\plugins\mcufinder
+2023-04-29 17:08:44,381 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/
+2023-04-29 17:08:44,400 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2023-04-29 17:08:44,401 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2023-04-29 17:08:44,403 [INFO] PluginManage:292 - Check plugin analytics
+2023-04-29 17:08:44,544 [INFO] AnalyticsPlugin:203 - Accepted Software Licenses: 
+2023-04-29 17:08:44,545 [INFO] AnalyticsPlugin:205 - Accepted CMSIS Pack Licenses: 
+2023-04-29 17:08:44,545 [INFO] AnalyticsPlugin:207 - Accepted Firmware Licenses: 
+2023-04-29 17:08:44,546 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2023-04-29 17:08:44,546 [INFO] PluginManage:292 - Check plugin clock
+2023-04-29 17:08:44,567 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2023-04-29 17:08:44,567 [INFO] PluginManage:292 - Check plugin ddr
+2023-04-29 17:08:44,569 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2023-04-29 17:08:44,569 [INFO] PluginManage:292 - Check plugin filemanager
+2023-04-29 17:08:44,683 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2023-04-29 17:08:44,683 [INFO] PluginManage:292 - Check plugin ipmanager
+2023-04-29 17:08:44,691 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2023-04-29 17:08:44,691 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2023-04-29 17:08:44,710 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2023-04-29 17:08:44,710 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2023-04-29 17:08:44,744 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2023-04-29 17:08:44,745 [INFO] PluginManage:292 - Check plugin power
+2023-04-29 17:08:44,765 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2023-04-29 17:08:44,765 [INFO] PluginManage:292 - Check plugin projectmanager
+2023-04-29 17:08:44,779 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2023-04-29 17:08:44,779 [INFO] PluginManage:292 - Check plugin thirdparty
+2023-04-29 17:08:44,945 [INFO] ThirdPartyDb:333 - Open Third Party DataBase File (C:/Users/Lenovo/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 55 ms. number of Sw pack : 52
+2023-04-29 17:08:44,949 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2023-04-29 17:08:44,950 [INFO] PluginManage:292 - Check plugin tools
+2023-04-29 17:08:45,000 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2023-04-29 17:08:45,000 [INFO] PluginManage:292 - Check plugin tutovideos
+2023-04-29 17:08:45,201 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2023-04-29 17:08:45,201 [INFO] PluginManage:292 - Check plugin updater
+2023-04-29 17:08:45,213 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2023-04-29 17:08:45,213 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2023-04-29 17:08:45,388 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2023-04-29 17:08:45,553 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,553 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2023-04-29 17:08:45,588 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,588 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2023-04-29 17:08:45,631 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,631 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2023-04-29 17:08:45,659 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,659 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2023-04-29 17:08:45,693 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,693 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2023-04-29 17:08:45,748 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,748 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2023-04-29 17:08:45,764 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,765 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2023-04-29 17:08:45,788 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,788 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2023-04-29 17:08:45,838 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,838 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2023-04-29 17:08:45,853 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,853 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2023-04-29 17:08:45,877 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,878 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2023-04-29 17:08:45,975 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:45,975 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2023-04-29 17:08:46,094 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,094 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2023-04-29 17:08:46,133 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,133 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2023-04-29 17:08:46,220 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,221 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2023-04-29 17:08:46,250 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,251 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2023-04-29 17:08:46,299 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,299 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2023-04-29 17:08:46,339 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,339 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2023-04-29 17:08:46,350 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,350 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2023-04-29 17:08:46,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,383 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2023-04-29 17:08:46,394 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,395 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2023-04-29 17:08:46,405 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,406 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2023-04-29 17:08:46,438 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,438 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2023-04-29 17:08:46,490 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,491 [INFO] PluginManager:200 - loadIPPluginJar : add openamp
+2023-04-29 17:08:46,529 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,529 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2023-04-29 17:08:46,544 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,546 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2023-04-29 17:08:46,569 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,569 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2023-04-29 17:08:46,580 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,581 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2023-04-29 17:08:46,626 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,627 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2023-04-29 17:08:46,664 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,664 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2023-04-29 17:08:46,709 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,709 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2023-04-29 17:08:46,752 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,752 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2023-04-29 17:08:46,808 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,808 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2023-04-29 17:08:46,832 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,832 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2023-04-29 17:08:46,857 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,858 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2023-04-29 17:08:46,881 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,881 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2023-04-29 17:08:46,906 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,906 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2023-04-29 17:08:46,946 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-04-29 17:08:46,946 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2023-04-29 17:08:47,674 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: null
+2023-04-29 17:08:48,546 [FATAL] Updater:282 - Updater called before beeing initialized
+2023-04-29 17:08:48,746 [FATAL] Updater:282 - Updater called before beeing initialized
+2023-04-29 17:08:48,746 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2023-04-29 17:08:48,754 [INFO] ThirdParty:777 - entering critical section [close project]
+2023-04-29 17:08:48,755 [INFO] ThirdParty:790 - exiting critical section [close project]
+2023-04-29 17:08:48,757 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2023-04-29 17:08:48,758 [FATAL] Updater:282 - Updater called before beeing initialized
+2023-04-29 17:08:48,768 [ERROR] Updater:967 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2023-04-29 17:08:48,770 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2023-04-29 17:08:48,774 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin\STM32_Programmer_CLI.exe -l
+2023-04-29 17:08:49,133 [INFO] MainDdrPanel:49 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2023-04-29 17:08:49,385 [INFO] Updater:904 - Updater Version found : 6.0.0
+2023-04-29 17:08:49,417 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2023-04-29 17:08:49,986 [INFO] MainUpdater:2268 - connection check result : 10
+2023-04-29 17:08:49,987 [INFO] MainUpdater:239 - Updater Check For Update Now.
+2023-04-29 17:08:49,988 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2023-04-29 17:08:50,121 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2023-04-29 17:08:50,152 [INFO] MainUpdater:2268 - connection check result : 10
+2023-04-29 17:08:50,920 [INFO] ServerAccessManage:348 - Download File mcusDocs.json._tmp_
+2023-04-29 17:08:50,964 [WARN] IntegrityCheckThread:61 - waiting for thirdparty lock release [integrity check]
+2023-04-29 17:08:50,964 [INFO] IntegrityCheckThread:63 - entering critical section [integrity check]
+2023-04-29 17:08:50,964 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2023-04-29 17:08:51,357 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-04-29 17:08:51,480 [INFO] ServerAccessManage:348 - Download File mcusFeaturesAndDescription.json._tmp_
+2023-04-29 17:08:51,772 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:51,772 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:51,773 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:51,773 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:51,773 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:51,793 [ERROR] ServerAccessManage:517 - User Cancel Download : mcusFeaturesAndDescription.json._tmp_.
+2023-04-29 17:08:51,794 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-04-29 17:08:51,823 [INFO] DbMcusDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:51,826 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/families.xml
+2023-04-29 17:08:52,224 [ERROR] DbUtils:114 - File not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/mcusFeaturesAndDescription.json._tmp_
+2023-04-29 17:08:52,224 [WARN] DbUtils:163 - success is not a boolean!
+2023-04-29 17:08:52,224 [ERROR] DbFile:108 - Temporary file not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder\mcu\mcusFeaturesAndDescription.json._tmp_
+2023-04-29 17:08:52,227 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1722 are visible in CubeMX)
+2023-04-29 17:08:52,228 [INFO] ApiDb:201 - Load user favorites file C:\Users\Lenovo/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2023-04-29 17:08:52,228 [INFO] ApiDb:205 - User favorites MCUs=[]
+2023-04-29 17:08:52,228 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2023-04-29 17:08:52,229 [ERROR] DbMcusDocs:83 - No MCUs documents found !
+2023-04-29 17:08:52,235 [INFO] DbMcusDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:52,236 [ERROR] DbMcusDocs:83 - No MCUs documents found !
+2023-04-29 17:08:52,237 [INFO] ApiDb:226 - Save user favorites file C:\Users\Lenovo/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2023-04-29 17:08:52,237 [INFO] ApiDb:230 - User favorites MCUs=[]
+2023-04-29 17:08:52,237 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/families.xml
+2023-04-29 17:08:52,680 [INFO] DbMcusJson:92 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:53,508 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1911 are visible in CubeMX)
+2023-04-29 17:08:53,509 [INFO] ApiDb:201 - Load user favorites file C:\Users\Lenovo/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2023-04-29 17:08:53,509 [INFO] ApiDb:205 - User favorites MCUs=[]
+2023-04-29 17:08:53,509 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2023-04-29 17:08:53,515 [ERROR] DbUtils:114 - File not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/boardsDocs.json._tmp_
+2023-04-29 17:08:53,516 [WARN] DbUtils:163 - success is not a boolean!
+2023-04-29 17:08:53,516 [ERROR] DbBoardsDocs:83 - No boards documents found !
+2023-04-29 17:08:53,516 [ERROR] DbFile:108 - Temporary file not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder\mcu\boardsDocs.json._tmp_
+2023-04-29 17:08:53,527 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:53,548 [INFO] DbBoardsPdsc:94 - Found 23 items
+2023-04-29 17:08:53,556 [INFO] DbBoardsPdsc:94 - Found 9 items
+2023-04-29 17:08:53,567 [INFO] DbBoardsPdsc:94 - Found 29 items
+2023-04-29 17:08:53,578 [INFO] DbBoardsPdsc:94 - Found 1 items
+2023-04-29 17:08:53,592 [INFO] DbBoardsPdsc:94 - Found 44 items
+2023-04-29 17:08:53,604 [INFO] DbBoardsPdsc:94 - Found 40 items
+2023-04-29 17:08:53,612 [INFO] DbBoardsPdsc:94 - Found 2 items
+2023-04-29 17:08:53,620 [INFO] DbBoardsPdsc:94 - Found 4 items
+2023-04-29 17:08:53,625 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2023-04-29 17:08:53,625 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2023-04-29 17:08:53,627 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2023-04-29 17:08:53,627 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2023-04-29 17:08:53,627 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2023-04-29 17:08:53,629 [ERROR] DbUtils:114 - File not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/boards.json._tmp_
+2023-04-29 17:08:53,629 [WARN] DbUtils:163 - success is not a boolean!
+2023-04-29 17:08:53,629 [ERROR] DbFile:108 - Temporary file not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder\mcu\boards.json._tmp_
+2023-04-29 17:08:53,629 [INFO] DbBoards:117 - Found 152 boards (149 are supported by CubeMX)
+2023-04-29 17:08:53,631 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:53,635 [ERROR] DbBoardsDocs:83 - No boards documents found !
+2023-04-29 17:08:53,637 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:53,639 [ERROR] DbBoardsDocs:83 - No boards documents found !
+2023-04-29 17:08:53,639 [WARN] DbBoards:127 - board B-G474E-DPOW1 has no document id list !
+2023-04-29 17:08:53,639 [WARN] DbBoards:127 - board B-L072Z-LRWAN1 has no document id list !
+2023-04-29 17:08:53,639 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2023-04-29 17:08:53,639 [WARN] DbBoards:127 - board B-L475E-IOT01A1 has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board B-L4S5I-IOT01A has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F030R8 has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F031K6 has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F042K6 has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F070RB has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F072RB has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F091RC has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F103RB has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F207ZG has no document id list !
+2023-04-29 17:08:53,640 [WARN] DbBoards:127 - board NUCLEO-F302R8 has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F303K8 has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F303RE has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F303ZE has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F334R8 has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F401RE has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F410RB has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F411RE has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F412ZG has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F413ZH has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F429ZI has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F439ZI has no document id list !
+2023-04-29 17:08:53,641 [WARN] DbBoards:127 - board NUCLEO-F446RE has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-F446ZE has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-F722ZE has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-F746ZG has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-F767ZI has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-G031K8 has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-G070RB has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-G071RB has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-G431KB has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-G431RB has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-G474RE has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-G491RE has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-H723ZG has no document id list !
+2023-04-29 17:08:53,642 [WARN] DbBoards:127 - board NUCLEO-H743ZI has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-H745ZI-Q has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-H753ZI has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-H755ZI-Q has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-H7A3ZI-Q has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-L010RB has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-L011K4 has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-L031K6 has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-L053R8 has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-L073RZ has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-L152RE has no document id list !
+2023-04-29 17:08:53,643 [WARN] DbBoards:127 - board NUCLEO-L412KB has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L412RB-P has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L432KC has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L433RC-P has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L452RE has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L452RE-P has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L476RG has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L496ZG has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L496ZG-P has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L4P5ZG has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L4R5ZI has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L4R5ZI-P has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-L552ZE-Q has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board P-NUCLEO-WB55 has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2023-04-29 17:08:53,644 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM32072B-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM32091C-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM32100E-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM3210C-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM3210E-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM3220G-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM3221G-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM32303C-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM32303E-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM32373C-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM3240G-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM3241G-EVAL has no document id list !
+2023-04-29 17:08:53,645 [WARN] DbBoards:127 - board STM32429I-EVAL1 has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32439I-EVAL2 has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32446E-EVAL has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32469I-EVAL has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32479I-EVAL has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32746G-EVAL2 has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32756G-EVAL2 has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F0308-DISCO has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F072B-DISCO has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F0DISCOVERY has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F3348-DISCO has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F3DISCOVERY has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F407G-DISC1 has no document id list !
+2023-04-29 17:08:53,646 [WARN] DbBoards:127 - board STM32F411E-DISCO has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F412G-DISCO has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F413H-DISCO has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F429I-DISC1 has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F469I-DISCO has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F723E-DISCO has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F7308-DK has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F746G-DISCO has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F7508-DK has no document id list !
+2023-04-29 17:08:53,647 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32F769I-DISCO has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32F769I-EVAL has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32F779I-EVAL has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32G0316-DISCO has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32G071B-DISCO has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32G081B-EVAL has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32G474E-EVAL has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32G484E-EVAL has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32H735G-DK has no document id list !
+2023-04-29 17:08:53,648 [WARN] DbBoards:127 - board STM32H743I-EVAL has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H745I-DISCO has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H747I-DISCO has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H747I-EVAL has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H750B-DK has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H753I-EVAL has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H757I-EVAL has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H7B3I-DK has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32H7B3I-EVAL has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32L0538-DISCO has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32L073Z-EVAL has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32L100C-DISCO has no document id list !
+2023-04-29 17:08:53,649 [WARN] DbBoards:127 - board STM32L152C-DISCO has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L152D-EVAL has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L476G-DISCO has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L476G-EVAL has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L496G-DISCO has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L4P5G-DK has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L4R9I-DISCO has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L4R9I-EVAL has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L552E-EV has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32L562E-DK has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32MP157A-EV1 has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32MP157C-DK2 has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32MP157C-EV1 has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2023-04-29 17:08:53,650 [WARN] DbBoards:127 - board STM32VLDISCOVERY has no document id list !
+2023-04-29 17:08:53,723 [ERROR] DbBoards:192 - No image file URL for board B-L462E-CELL1
+2023-04-29 17:08:54,909 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Lenovo/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-04-29 17:08:55,245 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Lenovo/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-04-29 17:08:55,437 [INFO] IntegrityCheckThread:76 - exiting critical section [integrity check]
+2023-04-29 17:08:55,437 [INFO] IntegrityCheckThread:79 - End integrity checks thread
+2023-04-29 17:08:56,050 [INFO] ApiDb:201 - Load user favorites file C:\Users\Lenovo/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2023-04-29 17:08:56,050 [INFO] ApiDb:205 - User favorites Boards=[]
+2023-04-29 17:08:56,050 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2023-04-29 17:08:56,051 [ERROR] DbBoardsDocs:83 - No boards documents found !
+2023-04-29 17:08:56,052 [INFO] ApiDb:226 - Save user favorites file C:\Users\Lenovo/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2023-04-29 17:08:56,052 [INFO] ApiDb:230 - User favorites Boards=[]
+2023-04-29 17:08:56,054 [INFO] DbBoardsPdsc:94 - Found 23 items
+2023-04-29 17:08:56,055 [INFO] DbBoardsPdsc:94 - Found 9 items
+2023-04-29 17:08:56,057 [INFO] DbBoardsPdsc:94 - Found 29 items
+2023-04-29 17:08:56,058 [INFO] DbBoardsPdsc:94 - Found 1 items
+2023-04-29 17:08:56,061 [INFO] DbBoardsPdsc:94 - Found 44 items
+2023-04-29 17:08:56,064 [INFO] DbBoardsPdsc:94 - Found 40 items
+2023-04-29 17:08:56,065 [INFO] DbBoardsPdsc:94 - Found 2 items
+2023-04-29 17:08:56,067 [INFO] DbBoardsPdsc:94 - Found 4 items
+2023-04-29 17:08:56,070 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2023-04-29 17:08:56,071 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2023-04-29 17:08:56,073 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2023-04-29 17:08:56,074 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2023-04-29 17:08:56,074 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2023-04-29 17:08:56,118 [INFO] DbBoardsJson:85 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:56,124 [INFO] DbBoards:117 - Found 166 boards (149 are supported by CubeMX)
+2023-04-29 17:08:56,125 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:56,130 [INFO] DbBoardsDocs:81 - Found 209 boards documents
+2023-04-29 17:08:56,131 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2023-04-29 17:08:56,131 [WARN] DbBoards:127 - board NUCLEO-H743ZI has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STEVAL-STWINKT1B has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STM32439I-EVAL2 has no document id list !
+2023-04-29 17:08:56,132 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2023-04-29 17:08:56,133 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2023-04-29 17:08:56,133 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2023-04-29 17:08:56,133 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2023-04-29 17:08:56,133 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2023-04-29 17:08:56,133 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2023-04-29 17:08:56,133 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2023-04-29 17:08:56,169 [ERROR] DbBoards:189 - Image file not found for board B-L462E-CELL1: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/B-L462E-CELL1_small.jpg
+2023-04-29 17:08:56,191 [ERROR] DbBoards:189 - Image file not found for board B-U585I-IOT02A: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/B-U585I-IOT02A_small.jpg
+2023-04-29 17:08:56,243 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-F413ZH: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-f413zh_small.jpg
+2023-04-29 17:08:56,401 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-L552ZE-Q: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo_l552ze_q_small.jpg
+2023-04-29 17:08:56,402 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-U575ZI-Q: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-u575zi-q_small.jpg
+2023-04-29 17:08:56,402 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WB15CC: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wb15cc_small.jpg
+2023-04-29 17:08:56,402 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WB55RG: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wb55rg_small.jpg
+2023-04-29 17:08:56,402 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WL55JC: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wl55jc-small.jpg
+2023-04-29 17:08:56,516 [ERROR] DbBoards:189 - Image file not found for board STEVAL-STWINKT1B: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/steval-stwinkt1b_small.jpg
+2023-04-29 17:08:56,799 [ERROR] DbBoards:189 - Image file not found for board STM32G0C1E-EV: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32g0c1e-eval_small.jpg
+2023-04-29 17:08:56,868 [ERROR] DbBoards:189 - Image file not found for board STM32H7B3I-EVAL: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32h7b3ieval_small.jpg
+2023-04-29 17:08:56,987 [ERROR] DbBoards:189 - Image file not found for board STM32U575I-EV: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32u575i-ev_small.jpg
+2023-04-29 17:08:57,006 [ERROR] DbBoards:189 - Image file not found for board STM32WB5MM-DK: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/STM32WB5MM-DK_small.jpg
+2023-04-29 17:08:57,007 [INFO] ApiDb:201 - Load user favorites file C:\Users\Lenovo/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2023-04-29 17:08:57,007 [INFO] ApiDb:205 - User favorites Boards=[]
+2023-04-29 17:08:57,007 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2023-04-29 17:08:57,247 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-04-29 17:08:57,409 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2023-04-29 17:08:57,415 [INFO] MultiScanPanel:193 - Auto-refresh data requested => check proxy status ongoing
+2023-04-29 17:08:57,417 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2023-04-29 17:08:57,876 [INFO] LoadUrlFilesThread:162 - End of LoadServerUrlFiles without Thread
+2023-04-29 17:08:57,886 [INFO] DetailPanel:331 - Set advertising image to C:/Users/Lenovo/STM32Cube/Repository/\stm32cubemx-promo_image.jpg
+2023-04-29 17:08:58,510 [INFO] ServerAccessManage:348 - Download File mcusDocs.json._tmp_
+2023-04-29 17:08:58,911 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-04-29 17:08:59,068 [INFO] ServerAccessManage:348 - Download File mcusFeaturesAndDescription.json._tmp_
+2023-04-29 17:08:59,162 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:59,163 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:59,163 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:59,174 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:59,174 [ERROR] WebUtils:615 - Updater is busy
+2023-04-29 17:08:59,177 [INFO] DbMcusDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:08:59,207 [ERROR] ServerAccessManage:517 - User Cancel Download : mcusFeaturesAndDescription.json._tmp_.
+2023-04-29 17:08:59,207 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-04-29 17:08:59,313 [INFO] DbMcusDocs:81 - Found 682 MCUs documents
+2023-04-29 17:08:59,315 [INFO] ApiDb:226 - Save user favorites file C:\Users\Lenovo/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-04-29 17:08:59,316 [INFO] ApiDb:230 - User favorites MCUs=[]
+2023-04-29 17:08:59,317 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/families.xml
+2023-04-29 17:08:59,504 [ERROR] DbUtils:114 - File not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/mcusFeaturesAndDescription.json._tmp_
+2023-04-29 17:08:59,504 [WARN] DbUtils:163 - success is not a boolean!
+2023-04-29 17:08:59,505 [ERROR] DbFile:108 - Temporary file not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder\mcu\mcusFeaturesAndDescription.json._tmp_
+2023-04-29 17:08:59,508 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1722 are visible in CubeMX)
+2023-04-29 17:08:59,508 [INFO] ApiDb:201 - Load user favorites file C:\Users\Lenovo/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-04-29 17:08:59,509 [INFO] ApiDb:205 - User favorites MCUs=[]
+2023-04-29 17:08:59,509 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2023-04-29 17:08:59,651 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2023-04-29 17:09:00,045 [ERROR] DbUtils:114 - File not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/boardsDocs.json._tmp_
+2023-04-29 17:09:00,045 [WARN] DbUtils:163 - success is not a boolean!
+2023-04-29 17:09:00,045 [ERROR] DbBoardsDocs:83 - No boards documents found !
+2023-04-29 17:09:00,046 [ERROR] DbFile:108 - Temporary file not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder\mcu\boardsDocs.json._tmp_
+2023-04-29 17:09:00,048 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-04-29 17:09:00,053 [INFO] DbBoardsDocs:81 - Found 209 boards documents
+2023-04-29 17:09:00,053 [INFO] ApiDb:226 - Save user favorites file C:\Users\Lenovo/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2023-04-29 17:09:00,054 [INFO] ApiDb:230 - User favorites Boards=[]
+2023-04-29 17:09:00,057 [INFO] DbBoardsPdsc:94 - Found 23 items
+2023-04-29 17:09:00,058 [INFO] DbBoardsPdsc:94 - Found 9 items
+2023-04-29 17:09:00,061 [INFO] DbBoardsPdsc:94 - Found 29 items
+2023-04-29 17:09:00,063 [INFO] DbBoardsPdsc:94 - Found 1 items
+2023-04-29 17:09:00,068 [INFO] DbBoardsPdsc:94 - Found 44 items
+2023-04-29 17:09:00,073 [INFO] DbBoardsPdsc:94 - Found 40 items
+2023-04-29 17:09:00,075 [INFO] DbBoardsPdsc:94 - Found 2 items
+2023-04-29 17:09:00,077 [INFO] DbBoardsPdsc:94 - Found 4 items
+2023-04-29 17:09:00,082 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2023-04-29 17:09:00,083 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2023-04-29 17:09:00,086 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2023-04-29 17:09:00,086 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2023-04-29 17:09:00,087 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2023-04-29 17:09:00,089 [ERROR] DbUtils:114 - File not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder//mcu/boards.json._tmp_
+2023-04-29 17:09:00,089 [WARN] DbUtils:163 - success is not a boolean!
+2023-04-29 17:09:00,089 [ERROR] DbFile:108 - Temporary file not found: C:\Users\Lenovo\.stmcufinder\plugins\mcufinder\mcu\boards.json._tmp_
+2023-04-29 17:09:00,090 [INFO] DbBoards:117 - Found 152 boards (149 are supported by CubeMX)
+2023-04-29 17:09:00,090 [WARN] DbBoards:127 - board B-G474E-DPOW1 has no document id list !
+2023-04-29 17:09:00,090 [WARN] DbBoards:127 - board B-L072Z-LRWAN1 has no document id list !
+2023-04-29 17:09:00,091 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2023-04-29 17:09:00,091 [WARN] DbBoards:127 - board B-L475E-IOT01A1 has no document id list !
+2023-04-29 17:09:00,091 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2023-04-29 17:09:00,091 [WARN] DbBoards:127 - board B-L4S5I-IOT01A has no document id list !
+2023-04-29 17:09:00,091 [WARN] DbBoards:127 - board NUCLEO-F030R8 has no document id list !
+2023-04-29 17:09:00,091 [WARN] DbBoards:127 - board NUCLEO-F031K6 has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F042K6 has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F070RB has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F072RB has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F091RC has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F103RB has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F207ZG has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F302R8 has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F303K8 has no document id list !
+2023-04-29 17:09:00,092 [WARN] DbBoards:127 - board NUCLEO-F303RE has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F303ZE has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F334R8 has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F401RE has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F410RB has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F411RE has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F412ZG has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F413ZH has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F429ZI has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F439ZI has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F446RE has no document id list !
+2023-04-29 17:09:00,093 [WARN] DbBoards:127 - board NUCLEO-F446ZE has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-F722ZE has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-F746ZG has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-F767ZI has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-G031K8 has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-G070RB has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-G071RB has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-G431KB has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-G431RB has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-G474RE has no document id list !
+2023-04-29 17:09:00,094 [WARN] DbBoards:127 - board NUCLEO-G491RE has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-H723ZG has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-H743ZI has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-H745ZI-Q has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-H753ZI has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-H755ZI-Q has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-H7A3ZI-Q has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-L010RB has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-L011K4 has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-L031K6 has no document id list !
+2023-04-29 17:09:00,095 [WARN] DbBoards:127 - board NUCLEO-L053R8 has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L073RZ has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L152RE has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L412KB has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L412RB-P has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L432KC has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L433RC-P has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L452RE has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L452RE-P has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L476RG has no document id list !
+2023-04-29 17:09:00,096 [WARN] DbBoards:127 - board NUCLEO-L496ZG has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board NUCLEO-L496ZG-P has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board NUCLEO-L4P5ZG has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board NUCLEO-L4R5ZI has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board NUCLEO-L4R5ZI-P has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board NUCLEO-L552ZE-Q has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board P-NUCLEO-WB55 has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2023-04-29 17:09:00,097 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STM32072B-EVAL has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STM32091C-EVAL has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STM32100E-EVAL has no document id list !
+2023-04-29 17:09:00,098 [WARN] DbBoards:127 - board STM3210C-EVAL has no document id list !
+2023-04-29 17:09:00,099 [WARN] DbBoards:127 - board STM3210E-EVAL has no document id list !
+2023-04-29 17:09:00,099 [WARN] DbBoards:127 - board STM3220G-EVAL has no document id list !
+2023-04-29 17:09:00,099 [WARN] DbBoards:127 - board STM3221G-EVAL has no document id list !
+2023-04-29 17:09:00,099 [WARN] DbBoards:127 - board STM32303C-EVAL has no document id list !
+2023-04-29 17:09:00,099 [WARN] DbBoards:127 - board STM32303E-EVAL has no document id list !
+2023-04-29 17:09:00,099 [WARN] DbBoards:127 - board STM32373C-EVAL has no document id list !
+2023-04-29 17:09:00,100 [WARN] DbBoards:127 - board STM3240G-EVAL has no document id list !
+2023-04-29 17:09:00,100 [WARN] DbBoards:127 - board STM3241G-EVAL has no document id list !
+2023-04-29 17:09:00,100 [WARN] DbBoards:127 - board STM32429I-EVAL1 has no document id list !
+2023-04-29 17:09:00,100 [WARN] DbBoards:127 - board STM32439I-EVAL2 has no document id list !
+2023-04-29 17:09:00,100 [WARN] DbBoards:127 - board STM32446E-EVAL has no document id list !
+2023-04-29 17:09:00,100 [WARN] DbBoards:127 - board STM32469I-EVAL has no document id list !
+2023-04-29 17:09:00,100 [WARN] DbBoards:127 - board STM32479I-EVAL has no document id list !
+2023-04-29 17:09:00,101 [WARN] DbBoards:127 - board STM32746G-EVAL2 has no document id list !
+2023-04-29 17:09:00,101 [WARN] DbBoards:127 - board STM32756G-EVAL2 has no document id list !
+2023-04-29 17:09:00,101 [WARN] DbBoards:127 - board STM32F0308-DISCO has no document id list !
+2023-04-29 17:09:00,101 [WARN] DbBoards:127 - board STM32F072B-DISCO has no document id list !
+2023-04-29 17:09:00,101 [WARN] DbBoards:127 - board STM32F0DISCOVERY has no document id list !
+2023-04-29 17:09:00,101 [WARN] DbBoards:127 - board STM32F3348-DISCO has no document id list !
+2023-04-29 17:09:00,101 [WARN] DbBoards:127 - board STM32F3DISCOVERY has no document id list !
+2023-04-29 17:09:00,102 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2023-04-29 17:09:00,102 [WARN] DbBoards:127 - board STM32F407G-DISC1 has no document id list !
+2023-04-29 17:09:00,102 [WARN] DbBoards:127 - board STM32F411E-DISCO has no document id list !
+2023-04-29 17:09:00,102 [WARN] DbBoards:127 - board STM32F412G-DISCO has no document id list !
+2023-04-29 17:09:00,102 [WARN] DbBoards:127 - board STM32F413H-DISCO has no document id list !
+2023-04-29 17:09:00,102 [WARN] DbBoards:127 - board STM32F429I-DISC1 has no document id list !
+2023-04-29 17:09:00,103 [WARN] DbBoards:127 - board STM32F469I-DISCO has no document id list !
+2023-04-29 17:09:00,103 [WARN] DbBoards:127 - board STM32F723E-DISCO has no document id list !
+2023-04-29 17:09:00,103 [WARN] DbBoards:127 - board STM32F7308-DK has no document id list !
+2023-04-29 17:09:00,103 [WARN] DbBoards:127 - board STM32F746G-DISCO has no document id list !
+2023-04-29 17:09:00,103 [WARN] DbBoards:127 - board STM32F7508-DK has no document id list !
+2023-04-29 17:09:00,103 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2023-04-29 17:09:00,103 [WARN] DbBoards:127 - board STM32F769I-DISCO has no document id list !
+2023-04-29 17:09:00,104 [WARN] DbBoards:127 - board STM32F769I-EVAL has no document id list !
+2023-04-29 17:09:00,104 [WARN] DbBoards:127 - board STM32F779I-EVAL has no document id list !
+2023-04-29 17:09:00,104 [WARN] DbBoards:127 - board STM32G0316-DISCO has no document id list !
+2023-04-29 17:09:00,104 [WARN] DbBoards:127 - board STM32G071B-DISCO has no document id list !
+2023-04-29 17:09:00,104 [WARN] DbBoards:127 - board STM32G081B-EVAL has no document id list !
+2023-04-29 17:09:00,104 [WARN] DbBoards:127 - board STM32G474E-EVAL has no document id list !
+2023-04-29 17:09:00,105 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2023-04-29 17:09:00,105 [WARN] DbBoards:127 - board STM32G484E-EVAL has no document id list !
+2023-04-29 17:09:00,105 [WARN] DbBoards:127 - board STM32H735G-DK has no document id list !
+2023-04-29 17:09:00,105 [WARN] DbBoards:127 - board STM32H743I-EVAL has no document id list !
+2023-04-29 17:09:00,105 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2023-04-29 17:09:00,105 [WARN] DbBoards:127 - board STM32H745I-DISCO has no document id list !
+2023-04-29 17:09:00,105 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H747I-DISCO has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H747I-EVAL has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H750B-DK has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H753I-EVAL has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H757I-EVAL has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H7B3I-DK has no document id list !
+2023-04-29 17:09:00,106 [WARN] DbBoards:127 - board STM32H7B3I-EVAL has no document id list !
+2023-04-29 17:09:00,107 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2023-04-29 17:09:00,107 [WARN] DbBoards:127 - board STM32L0538-DISCO has no document id list !
+2023-04-29 17:09:00,107 [WARN] DbBoards:127 - board STM32L073Z-EVAL has no document id list !
+2023-04-29 17:09:00,107 [WARN] DbBoards:127 - board STM32L100C-DISCO has no document id list !
+2023-04-29 17:09:00,107 [WARN] DbBoards:127 - board STM32L152C-DISCO has no document id list !
+2023-04-29 17:09:00,107 [WARN] DbBoards:127 - board STM32L152D-EVAL has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L476G-DISCO has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L476G-EVAL has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L496G-DISCO has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L4P5G-DK has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L4R9I-DISCO has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L4R9I-EVAL has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L552E-EV has no document id list !
+2023-04-29 17:09:00,108 [WARN] DbBoards:127 - board STM32L562E-DK has no document id list !
+2023-04-29 17:09:00,109 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2023-04-29 17:09:00,109 [WARN] DbBoards:127 - board STM32MP157A-EV1 has no document id list !
+2023-04-29 17:09:00,109 [WARN] DbBoards:127 - board STM32MP157C-DK2 has no document id list !
+2023-04-29 17:09:00,109 [WARN] DbBoards:127 - board STM32MP157C-EV1 has no document id list !
+2023-04-29 17:09:00,109 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2023-04-29 17:09:00,109 [WARN] DbBoards:127 - board STM32VLDISCOVERY has no document id list !
+2023-04-29 17:09:00,143 [ERROR] DbBoards:192 - No image file URL for board B-L462E-CELL1
+2023-04-29 17:09:01,125 [INFO] ApiDb:201 - Load user favorites file C:\Users\Lenovo/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2023-04-29 17:09:01,125 [INFO] ApiDb:205 - User favorites Boards=[]
+2023-04-29 17:09:01,125 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2023-04-29 17:09:01,227 [ERROR] MultiScanPanel:793 - Unable to refresh data
+2023-04-29 17:09:01,228 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2023-04-29 17:09:10,209 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://download.eclipse.org:443: The target server failed to respond
+2023-04-29 17:09:10,212 [INFO] RetryExec:113 - Retrying request to {s}->https://download.eclipse.org:443
+2023-04-29 17:09:11,104 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://archive.eclipse.org:443: The target server failed to respond
+2023-04-29 17:09:11,104 [INFO] RetryExec:113 - Retrying request to {s}->https://archive.eclipse.org:443
+2023-04-29 17:09:12,072 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://download.eclipse.org:443: The target server failed to respond
+2023-04-29 17:09:12,073 [INFO] RetryExec:113 - Retrying request to {s}->https://download.eclipse.org:443
+2023-04-29 17:09:20,376 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.4
+2023-04-29 17:09:20,376 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.3
+2023-04-29 17:09:20,377 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.2
+2023-04-29 17:09:20,377 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.1
+2023-04-29 17:09:20,377 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.0
+2023-04-29 17:09:24,978 [INFO] ApiDb:226 - Save user favorites file C:\Users\Lenovo/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-04-29 17:09:24,979 [INFO] ApiDb:230 - User favorites MCUs=[]
