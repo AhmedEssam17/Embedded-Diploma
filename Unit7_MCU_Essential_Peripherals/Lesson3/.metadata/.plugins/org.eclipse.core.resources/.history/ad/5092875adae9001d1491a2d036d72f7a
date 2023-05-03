@@ -1,0 +1,80 @@
+/*
+ * STM32F103x6.h
+ *
+ *  Created on: May 3, 2023
+ *      Author: AhmedEssam
+ */
+
+#ifndef INC_STM32F103X6_H_
+#define INC_STM32F103X6_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+
+#include <stdlib.h>
+#include <stdint.h>
+
+//-----------------------------
+//Base addresses for Memories
+//-----------------------------
+
+#define FLASH_BASE							0x08000000UL
+#define SRAM_BASE							0x20000000UL
+#define System_Memory_BASE					0x1FFFF000UL
+#define Peripherals_BASE					0x40000000UL
+#define Cortex_M3_Internal_Peripherals_BASE	0xE0000000UL
+
+//-----------------------------
+//Base addresses for BUS Peripherals
+//-----------------------------
+
+//-----------------------------
+//Base addresses for AHB Bus
+//-----------------------------
+
+//RCC Base Addresses
+#define RCC_BASE 		0x40021000UL
+
+//-----------------------------
+//Base addresses for APB2 Bus
+//-----------------------------
+
+//GPIO Base Addresses
+//GPIOA & GPIOB Fully included in LQFP48 Package
+#define GPIOA_BASE 		0x40010800UL
+#define GPIOB_BASE 		0x40010C00UL
+
+//GPIOC & GPIOD Partially included in LQFP48 Package
+#define GPIOC_BASE 		0x40011000UL
+#define GPIOD_BASE 		0x40011400UL
+
+//GPIOE not included in LQFP48 Package
+#define GPIOE_BASE 		0x40011800UL
+
+//-----------------------------
+//Base addresses for APB1 Bus
+//-----------------------------
+#define RCC_BASE 		0x40021000UL
+
+#define RCC_BASE 		0x40021000UL
+
+//-*-*-*-*-*-*-*-*-*-*-*-
+//Peripheral register:
+//-*-*-*-*-*-*-*-*-*-*-*
+//-*-*-*-*-*-*-*-*-*-*-*-
+//Peripheral Instants:
+//-*-*-*-*-*-*-*-*-*-*-*
+//-*-*-*-*-*-*-*-*-*-*-*-
+//clock enable Macros:
+//-*-*-*-*-*-*-*-*-*-*-*
+//-*-*-*-*-*-*-*-*-*-*-*-
+//Generic Macros:
+//-*-*-*-*-*-*-*-*-*-*-*
+
+
+
+
+
+
+#endif /* INC_STM32F103X6_H_ */
