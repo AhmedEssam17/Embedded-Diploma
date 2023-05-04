@@ -1,0 +1,8 @@
+00000000 B CA_pVal
+00000004 C CA_state
+00000001 C CA_state_id
+         U highPressureFlag
+00000000 T setPressureVal
+0000002c T State_CA_detect
+00000060 T State_CA_waiting
+00000000 R threshold

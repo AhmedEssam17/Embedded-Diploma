@@ -1,0 +1,31 @@
+
+ComparingAlgorithm.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000078  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000ac  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000004  00000000  00000000  000000ac  2**2
+                  ALLOC
+  3 .rodata       00000004  00000000  00000000  000000ac  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .debug_info   00000112  00000000  00000000  000000b0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  5 .debug_abbrev 000000ef  00000000  00000000  000001c2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_loc    000000cc  00000000  00000000  000002b1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_aranges 00000020  00000000  00000000  0000037d  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_line   00000068  00000000  00000000  0000039d  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  9 .debug_str    0000015a  00000000  00000000  00000405  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .comment      0000007f  00000000  00000000  0000055f  2**0
+                  CONTENTS, READONLY
+ 11 .debug_frame  00000074  00000000  00000000  000005e0  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 12 .ARM.attributes 00000033  00000000  00000000  00000654  2**0
+                  CONTENTS, READONLY
