@@ -1,0 +1,103 @@
+/*
+ * lcd.c
+ *
+ * Created: 5/2/2023 7:48:37 PM
+ *  Author: AhmedEssam
+ */ 
+
+#include "lcd.h"
+
+void delay(int n){
+	uint32_t i, j;
+	for(i = 0; i < n; i++)
+		for(j = 0; j < 255; j++);
+}
+
+void LCD_INIT(){
+	delay(20);
+
+	PinConfig.GPIO_PinNumber = RS_SWITCH;
+	PinConfig.GPIO_MODE = GPIO_MODE_INPUT_FLOAT;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = RW_SWITCH;
+	PinConfig.GPIO_MODE = GPIO_MODE_INPUT_FLOAT;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = EN_SWITCH;
+	PinConfig.GPIO_MODE = GPIO_MODE_INPUT_FLOAT;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_0;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_1;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_2;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_3;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_4;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_5;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_6;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	PinConfig.GPIO_PinNumber = GPIO_PIN_7;
+	PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinConfig.GPIO_OUTPUT_SPEED = GPIO_OUTPUT_SPEED_10M;
+	MCAL_GPIO_init(LCD_PORT, &PinConfig);
+
+	_delay_ms(15);
+	LCD_clear_screen();
+	LCD_WriteCommand(LCD_FUNCTION_8BIT_2LINES);
+}
+
+void LCD_WriteCommand(unsigned char command){
+
+}
+
+void LCD_WriteChar(unsigned char data){
+
+}
+
+void LCD_WriteString(char* string){
+
+}
+
+void LCD_isBusy(void){
+
+}
+
+void LCD_Kick(void){
+
+}
+
+void LCD_ClearScreen(){
+	LCD_WriteCommand(LCD_CLEAR_SCREEN);
+}
+
+void LCD_GOTO_XY(unsigned char line, unsigned char position){
+
+}
+

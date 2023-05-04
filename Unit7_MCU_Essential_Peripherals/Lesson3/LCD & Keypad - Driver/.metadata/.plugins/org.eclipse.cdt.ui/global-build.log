@@ -1,0 +1,382 @@
+18:06:44 **** Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/gpio.d" -MT"STM32F103C6_Drivers/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/gpio.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/keypad.d" -MT"STM32F103C6_Drivers/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+In file included from ../STM32F103C6_Drivers/keypad.c:8:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/keypad.h:13:10: fatal error: avr/io.h: No such file or directory
+ #include <avr/io.h>
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/subdir.mk:26: STM32F103C6_Drivers/keypad.o] Error 1
+make: *** Waiting for unfinished jobs....
+../STM32F103C6_Drivers/lcd.c: In function 'LCD_INIT':
+../STM32F103C6_Drivers/lcd.c:71:2: warning: implicit declaration of function '_delay_ms'; did you mean 'delay'? [-Wimplicit-function-declaration]
+  _delay_ms(15);
+  ^~~~~~~~~
+  delay
+../STM32F103C6_Drivers/lcd.c:72:2: warning: implicit declaration of function 'LCD_clear_screen'; did you mean 'LCD_ClearScreen'? [-Wimplicit-function-declaration]
+  LCD_clear_screen();
+  ^~~~~~~~~~~~~~~~
+  LCD_ClearScreen
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:08:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/keypad.d" -MT"STM32F103C6_Drivers/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+In file included from ../STM32F103C6_Drivers/keypad.c:8:0:
+../STM32F103C6_Drivers/keypad.c: In function 'Keypad_init':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/keypad.h:24:29: error: 'DDRD' undeclared (first use in this function)
+ #define DataDir_KEYPAD_PORT DDRD
+                             ^
+../STM32F103C6_Drivers/keypad.c:14:2: note: in expansion of macro 'DataDir_KEYPAD_PORT'
+  DataDir_KEYPAD_PORT &= ~((1 << R0) | (1 << R1) | (1 << R2) | (1 << R3));
+  ^~~~~~~~~~~~~~~~~~~
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/keypad.h:24:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define DataDir_KEYPAD_PORT DDRD
+                             ^
+../STM32F103C6_Drivers/keypad.c:14:2: note: in expansion of macro 'DataDir_KEYPAD_PORT'
+  DataDir_KEYPAD_PORT &= ~((1 << R0) | (1 << R1) | (1 << R2) | (1 << R3));
+  ^~~~~~~~~~~~~~~~~~~
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/keypad.h:23:23: error: 'PORTD' undeclared (first use in this function)
+ #define KEYPAD_PORT   PORTD
+                       ^
+../STM32F103C6_Drivers/keypad.c:16:2: note: in expansion of macro 'KEYPAD_PORT'
+  KEYPAD_PORT = 0xFF;
+  ^~~~~~~~~~~
+../STM32F103C6_Drivers/keypad.c: In function 'Keypad_getkey':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/keypad.h:23:23: error: 'PORTD' undeclared (first use in this function)
+ #define KEYPAD_PORT   PORTD
+                       ^
+../STM32F103C6_Drivers/keypad.c:22:3: note: in expansion of macro 'KEYPAD_PORT'
+   KEYPAD_PORT |= ((1<<Key_padCol[0]) | (1<<Key_padCol[1]) | (1<<Key_padCol[2]) | (1<<Key_padCol[3]));
+   ^~~~~~~~~~~
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/keypad.h:25:21: error: 'PIND' undeclared (first use in this function)
+ #define keypadPIN   PIND
+                     ^
+../STM32F103C6_Drivers/keypad.c:25:10: note: in expansion of macro 'keypadPIN'
+    if (!(keypadPIN & (1 << Key_padRow[j])))
+          ^~~~~~~~~
+make: *** [STM32F103C6_Drivers/subdir.mk:26: STM32F103C6_Drivers/keypad.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:20:52 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/keypad.d" -MT"STM32F103C6_Drivers/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+../STM32F103C6_Drivers/keypad.c:8:10: fatal error: keypad.h: No such file or directory
+ #include "keypad.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/subdir.mk:26: STM32F103C6_Drivers/keypad.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:21:04 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:23:31 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `delay':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/Debug/../Src/main.c:36: multiple definition of `delay'
+STM32F103C6_Drivers/lcd.o:E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/Debug/../STM32F103C6_Drivers/lcd.c:10: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:24:08 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2356	      8	   1576	   3940	    f64	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:32:00 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2356	      8	   1576	   3940	    f64	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:43:43 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\bin\ld.exe: cannot open output file Drivers.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:43:57 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\bin\ld.exe: cannot open output file Drivers.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:44:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\bin\ld.exe: cannot open output file Drivers.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:44:31 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\bin\ld.exe: cannot open output file Drivers.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:44:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\bin\ld.exe: cannot open output file Drivers.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:45:42 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2356	      8	   1576	   3940	    f64	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:52:17 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2408	      8	   1576	   3992	    f98	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:32:43 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/keypad.d" -MT"STM32F103C6_Drivers/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/keypad.o"
+In file included from ../Src/main.c:27:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/keypad.h:12:0: warning: "F_CPU" redefined
+ #define F_CPU 8000000UL
+ 
+In file included from ../Src/main.c:26:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc/lcd.h:12:0: note: this is the location of the previous definition
+ #define F_CPU 1000000UL
+ 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2968	     40	   1576	   4584	   11e8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:32:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/keypad.d" -MT"STM32F103C6_Drivers/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2968	     40	   1576	   4584	   11e8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:43:38 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/lcd.d" -MT"STM32F103C6_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:57:3: warning: implicit declaration of function 'LCD_WRITE_CHAR' [-Wimplicit-function-declaration]
+   LCD_WRITE_CHAR(LCD_DISPLAY[i]);
+   ^~~~~~~~~~~~~~
+../Src/main.c:59:3: warning: implicit declaration of function 'wait_ms'; did you mean 'wcstombs'? [-Wimplicit-function-declaration]
+   wait_ms(100);
+   ^~~~~~~
+   wcstombs
+../Src/main.c:64:18: error: 'string' undeclared (first use in this function); did you mean 'strtol'?
+  LCD_WriteString(string)("Keypad is ready");
+                  ^~~~~~
+                  strtol
+../Src/main.c:64:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+19:43:47 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:57:3: warning: implicit declaration of function 'LCD_WRITE_CHAR' [-Wimplicit-function-declaration]
+   LCD_WRITE_CHAR(LCD_DISPLAY[i]);
+   ^~~~~~~~~~~~~~
+../Src/main.c:59:3: warning: implicit declaration of function 'wait_ms'; did you mean 'wcstombs'? [-Wimplicit-function-declaration]
+   wait_ms(100);
+   ^~~~~~~
+   wcstombs
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/Debug/../Src/main.c:57: undefined reference to `LCD_WRITE_CHAR'
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/Debug/../Src/main.c:59: undefined reference to `wait_ms'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+19:44:16 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3304	     40	   1576	   4920	   1338	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:47:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_init':
+../Src/main.c:55:2: warning: implicit declaration of function 'MCAL_GPIO_Init'; did you mean 'MCAL_GPIO_init'? [-Wimplicit-function-declaration]
+  MCAL_GPIO_Init(GPIOB, &PinCfg);
+  ^~~~~~~~~~~~~~
+  MCAL_GPIO_init
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3304	     40	   1576	   4920	   1338	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:48:34 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3304	     40	   1576	   4920	   1338	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:53:17 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3496	     40	   1576	   5112	   13f8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:54:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson3/LCD & Keypad - Driver/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson3\LCD & Keypad - Driver\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3496	     40	   1576	   5112	   13f8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
