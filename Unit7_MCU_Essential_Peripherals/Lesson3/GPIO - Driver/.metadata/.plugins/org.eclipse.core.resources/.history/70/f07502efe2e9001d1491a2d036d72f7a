@@ -1,0 +1,54 @@
+/*
+ * gpio.c
+ *
+ *  Created on: May 3, 2023
+ *      Author: AhmedEssam
+ */
+
+#include "gpio.h"
+
+
+/**================================================================
+* @Fn				-MCAL_GPIO_init
+* @brief 			-Initializes GPIOx PINy according to PinConfig specified parameters
+* @param [in]	 	-GPIOx: where x = (A,B,C,D,E)
+* @param [in] 		-PinConfig: Contains specified parameters for GPIO Pin
+* @retval 			-NONE
+* Note				-STM32F103C6 MCU has GPIO A..E but LQFP48 only has the following:
+* 					 GPIOA & GPIOB Fully included
+* 					 GPIOC & GPIOD Partially included
+* 					 GPIOE not included
+*/
+void MCAL_GPIO_init(GPIO_t *GPIOx, GPIO_PinConfig_t *PinConfig){
+
+}
+
+void MCAL_GPIO_deinit(GPIO_t *GPIOx){
+
+}
+
+uint8_t MCAL_GPIO_ReadPin(GPIO_t *GPIOx, uint16_t PinNumber){
+
+}
+
+uint16_t MCAL_GPIO_ReadPort(GPIO_t *GPIOx){
+
+}
+
+void MCAL_GPIO_WritePin(GPIO_t *GPIOx, uint16_t PinNumber, uint8_t data){
+
+}
+
+void MCAL_GPIO_WritePort(GPIO_t *GPIOx, uint16_t data){
+
+}
+
+void MCAL_GPIO_TogglePin(GPIO_t *GPIOx, uint16_t PinNumber){
+
+}
+
+uint8_t MCAL_GPIO_LockPin(GPIO_t *GPIOx, uint16_t PinNumber){
+
+}
+
+
