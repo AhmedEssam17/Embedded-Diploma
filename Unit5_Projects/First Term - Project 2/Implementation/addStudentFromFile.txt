@@ -1,4 +1,0 @@
-1 Ahmed Essam 3.0 1 2 3 4 5
-2 Hagar Karkar 2.5 11 22 3 44 55
-3 Reem Sadek 3.3 11 66 77 88 99
-4 Zead Hani 2.8 1 22 77 3 99
