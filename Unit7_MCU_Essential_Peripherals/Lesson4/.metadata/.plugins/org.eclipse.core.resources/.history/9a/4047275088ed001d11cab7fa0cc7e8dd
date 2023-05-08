@@ -1,0 +1,43 @@
+/*
+ * exti.h
+ *
+ *  Created on: May 8, 2023
+ *      Author: Lenovo
+ */
+
+#ifndef INC_EXTI_H_
+#define INC_EXTI_H_
+
+#include "STM32F103x6.h"
+#include "gpio.h"
+
+
+//====================================================================
+//						Configuration Structure
+//====================================================================
+
+typedef struct{
+	uint16_t 	EXTI_InputLineX;
+	GPIO_t* 	GPIOx;
+	uint16_t 	GPIO_PIN;
+	uint8_t 	IRQ_Number;
+}EXTI_GPIO_t;
+
+typedef struct{
+	EXTI_GPIO_t EXTI_PIN;		//Specifies EXTIxGPIO Mapping based on @ref EXTI_define
+
+}EXTI_PinConfig_t;
+
+
+//====================================================================
+//						Configuration Reference
+//====================================================================
+
+//-----------------------------
+//@ref EXTI_define
+//-----------------------------
+
+#define EXTI0PA0					{EXTI0, GPIOA, GPIO_PIN_0, EXTI0_IRQ}
+
+
+#endif /* INC_EXTI_H_ */

@@ -1,0 +1,367 @@
+14:33:00 **** Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/exti.d" -MT"STM32F103C6_Drivers/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/exti.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/gpio.d" -MT"STM32F103C6_Drivers/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/gpio.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL_Drivers/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_Drivers/keypad.d" -MT"HAL_Drivers/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_Drivers/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_Drivers/lcd.d" -MT"HAL_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_Drivers/lcd.o"
+In file included from ../STM32F103C6_Drivers/exti.c:8:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:181:6: error: conflicting types for 'MCAL_GPIO_deinit'
+ void MCAL_GPIO_deinit(void);
+      ^~~~~~~~~~~~~~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:92:6: note: previous declaration of 'MCAL_GPIO_deinit' was here
+ void MCAL_GPIO_deinit(GPIO_t *GPIOx);
+      ^~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/exti.c: In function 'Configure_EXTI':
+../STM32F103C6_Drivers/exti.c:106:46: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+  MCAL_GPIO_init(EXTI_Config->EXTI_PIN.GPIOx, PinConfig);
+                                              ^~~~~~~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:91:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_PinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_t *GPIOx, GPIO_PinConfig_t *PinConfig);
+      ^~~~~~~~~~~~~~
+../STM32F103C6_Drivers/exti.c: At top level:
+../STM32F103C6_Drivers/exti.c:166:6: error: conflicting types for 'MCAL_GPIO_deinit'
+ void MCAL_GPIO_deinit(void){
+      ^~~~~~~~~~~~~~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:92:6: note: previous declaration of 'MCAL_GPIO_deinit' was here
+ void MCAL_GPIO_deinit(GPIO_t *GPIOx);
+      ^~~~~~~~~~~~~~~~
+make: *** [STM32F103C6_Drivers/subdir.mk:21: STM32F103C6_Drivers/exti.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:33:12 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/exti.d" -MT"STM32F103C6_Drivers/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/exti.o"
+In file included from ../STM32F103C6_Drivers/exti.c:8:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:181:6: error: conflicting types for 'MCAL_GPIO_deinit'
+ void MCAL_GPIO_deinit(void);
+      ^~~~~~~~~~~~~~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:92:6: note: previous declaration of 'MCAL_GPIO_deinit' was here
+ void MCAL_GPIO_deinit(GPIO_t *GPIOx);
+      ^~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/exti.c:166:6: error: conflicting types for 'MCAL_GPIO_deinit'
+ void MCAL_GPIO_deinit(void){
+      ^~~~~~~~~~~~~~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:92:6: note: previous declaration of 'MCAL_GPIO_deinit' was here
+ void MCAL_GPIO_deinit(GPIO_t *GPIOx);
+      ^~~~~~~~~~~~~~~~
+make: *** [STM32F103C6_Drivers/subdir.mk:21: STM32F103C6_Drivers/exti.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:33:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/exti.d" -MT"STM32F103C6_Drivers/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/exti.o"
+In file included from ../STM32F103C6_Drivers/exti.c:8:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:181:6: error: conflicting types for 'MCAL_GPIO_deinit'
+ void MCAL_GPIO_deinit(void);
+      ^~~~~~~~~~~~~~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:92:6: note: previous declaration of 'MCAL_GPIO_deinit' was here
+ void MCAL_GPIO_deinit(GPIO_t *GPIOx);
+      ^~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/exti.c:166:6: error: conflicting types for 'MCAL_GPIO_deinit'
+ void MCAL_GPIO_deinit(){
+      ^~~~~~~~~~~~~~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:92:6: note: previous declaration of 'MCAL_GPIO_deinit' was here
+ void MCAL_GPIO_deinit(GPIO_t *GPIOx);
+      ^~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/exti.c: In function 'MCAL_GPIO_deinit':
+../STM32F103C6_Drivers/exti.c:166:1: error: number of arguments doesn't match prototype
+ void MCAL_GPIO_deinit(){
+ ^~~~
+In file included from E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:12:0,
+                 from ../STM32F103C6_Drivers/exti.c:8:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/gpio.h:92:6: error: prototype declaration
+ void MCAL_GPIO_deinit(GPIO_t *GPIOx);
+      ^~~~~~~~~~~~~~~~
+make: *** [STM32F103C6_Drivers/subdir.mk:21: STM32F103C6_Drivers/exti.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:34:14 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/exti.d" -MT"STM32F103C6_Drivers/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/exti.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson4\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1100	      8	   1632	   2740	    ab4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+14:40:10 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:49:16: error: invalid type argument of '->' (have 'EXTI_PinConfig_t {aka struct <anonymous>}')
+  EXTI_PinConfig->EXTI_PIN = EXTI9PB9;
+                ^~
+In file included from ../Src/main.c:28:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:29: note: in expansion of macro 'EXTI9PB9'
+  EXTI_PinConfig->EXTI_PIN = EXTI9PB9;
+                             ^~~~~~~~
+../Src/main.c:50:16: error: invalid type argument of '->' (have 'EXTI_PinConfig_t {aka struct <anonymous>}')
+  EXTI_PinConfig->Trigger = EXTI_Trigger_Rising;
+                ^~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:40:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:28:0:
+../Src/main.c: In function 'main':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:28: note: in expansion of macro 'EXTI9PB9'
+  EXTI_PinConfig.EXTI_PIN = EXTI9PB9;
+                            ^~~~~~~~
+../Src/main.c:48:19: warning: variable 'EXTI_PinConfig' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_PinConfig;
+                   ^~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:49:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:49:2: error: 'EXTI_PinConfig' undeclared (first use in this function); did you mean 'EXTI_PinConfig_t'?
+  EXTI_PinConfig.EXTI_PIN = EXTI9PB9;
+  ^~~~~~~~~~~~~~
+  EXTI_PinConfig_t
+../Src/main.c:49:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Src/main.c:28:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:28: note: in expansion of macro 'EXTI9PB9'
+  EXTI_PinConfig.EXTI_PIN = EXTI9PB9;
+                            ^~~~~~~~
+../Src/main.c:48:19: warning: unused variable 'EXTI_Config' [-Wunused-variable]
+  EXTI_PinConfig_t EXTI_Config;
+                   ^~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:51:05 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:28:0:
+../Src/main.c: In function 'main':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:25: note: in expansion of macro 'EXTI9PB9'
+  EXTI_Config.EXTI_PIN = EXTI9PB9;
+                         ^~~~~~~~
+../Src/main.c:48:19: warning: variable 'EXTI_Config' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_Config;
+                   ^~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:51:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:28:0:
+../Src/main.c: In function 'main':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:25: note: in expansion of macro 'EXTI9PB9'
+  EXTI_Config.EXTI_PIN = EXTI9PB9
+                         ^~~~~~~~
+../Src/main.c:48:19: warning: variable 'EXTI_Config' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_Config;
+                   ^~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:51:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:28:0:
+../Src/main.c: In function 'main':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:25: note: in expansion of macro 'EXTI9PB9'
+  EXTI_Config.EXTI_PIN = EXTI9PB9;
+                         ^~~~~~~~
+../Src/main.c:48:19: warning: variable 'EXTI_Config' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_Config;
+                   ^~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:53:24 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:28:0:
+../Src/main.c: In function 'main':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:25: note: in expansion of macro 'EXTI9PB9'
+  EXTI_Config.EXTI_PIN = EXTI9PB9;
+                         ^~~~~~~~
+../Src/main.c:51:17: error: incompatible type for argument 1 of 'MCAL_EXTI_init'
+  MCAL_EXTI_init(EXTI_Config);
+                 ^~~~~~~~~~~
+In file included from ../Src/main.c:28:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:180:6: note: expected 'EXTI_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'EXTI_PinConfig_t {aka struct <anonymous>}'
+ void MCAL_EXTI_init(EXTI_PinConfig_t *EXTI_Config);
+      ^~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:53:37 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:28:0:
+../Src/main.c: In function 'main':
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:120:22: error: expected expression before '{' token
+ #define EXTI9PB9     {EXTI9, GPIOB, GPIO_PIN_9, EXTI9_IRQ}
+                      ^
+../Src/main.c:49:25: note: in expansion of macro 'EXTI9PB9'
+  EXTI_Config.EXTI_PIN = EXTI9PB9;
+                         ^~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:13:45 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/exti.d" -MT"STM32F103C6_Drivers/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/exti.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson4\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3656	      8	   1640	   5304	   14b8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+15:15:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/exti.d" -MT"STM32F103C6_Drivers/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/exti.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson4\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3656	      8	   1640	   5304	   14b8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+15:17:02 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:28:0:
+E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc/exti.h:47:17: error: expected identifier or '(' before numeric constant
+ #define EXTI9   9
+                 ^
+../Src/main.c:42:6: note: in expansion of macro 'EXTI9'
+ void EXTI9(void){
+      ^~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:56:29: error: void value not ignored as it ought to be
+  EXTI_Config.P_IRQ_CallBack =
+                             ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:17:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson4\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3680	      8	   1640	   5328	   14d0	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+15:21:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson4\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1640	   5684	   1634	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+15:31:41 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/exti.d" -MT"STM32F103C6_Drivers/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/exti.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson4\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1640	   5684	   1634	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+15:35:16 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL_Drivers/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/HAL_Drivers/inc" -I"E:/Embedded Systems Diploma/Embedded Diploma/Unit7_MCU_Essential_Peripherals/Lesson4/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_Drivers/lcd.d" -MT"HAL_Drivers/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_Drivers/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded Systems Diploma\Embedded Diploma\Unit7_MCU_Essential_Peripherals\Lesson4\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1640	   5684	   1634	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 

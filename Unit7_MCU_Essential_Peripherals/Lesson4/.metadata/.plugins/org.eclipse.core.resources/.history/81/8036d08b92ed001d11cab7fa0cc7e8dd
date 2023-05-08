@@ -1,0 +1,10 @@
+/*
+ * exti.c
+ *
+ *  Created on: May 8, 2023
+ *      Author: Lenovo
+ */
+
+void MCAL_EXTI_init(EXTI_PinConfig_t *EXTI_Config);
+void MCAL_GPIO_deinit(void);
+void MCAL_GPIO_update(EXTI_PinConfig_t *EXTI_Config);
