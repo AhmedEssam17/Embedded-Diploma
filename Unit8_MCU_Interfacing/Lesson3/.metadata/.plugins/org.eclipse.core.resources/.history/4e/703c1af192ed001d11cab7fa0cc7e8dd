@@ -1,0 +1,91 @@
+/*
+ * exti.c
+ *
+ *  Created on: May 8, 2023
+ *      Author: Lenovo
+ */
+
+#include "exti.h"
+
+//====================================================================
+//						Generic Variables
+//====================================================================
+
+
+//====================================================================
+//						Generic Functions
+//====================================================================
+
+void Configure_EXTI(EXTI_PinConfig_t *EXTI_Config){
+
+	//1) Configure GPIO to be AF Input >> Floating Input
+	GPIO_PinConfig_t PinConfig;
+	PinConfig.GPIO_PinNumber = EXTI_Config->EXTI_PIN.GPIO_PIN;
+	PinConfig.GPIO_MODE = GPIO_MODE_INPUT_AF;
+	MCAL_GPIO_init(EXTI_Config->EXTI_PIN.GPIOx, PinConfig);
+
+	//2)
+
+}
+
+//====================================================================
+//						APIs Functions Definitions
+//====================================================================
+
+
+/**================================================================
+ * @Fn				-MCAL_GPIO_deinit
+ * @brief 			-Resets EXTIx registers and NVIC IRQ mask
+ * @param [in]	 	-EXTI_Config
+ * @retval 			-NONE
+ * Note				-NONE
+ */
+void MCAL_GPIO_deinit(void){
+
+	//Reset EXTI Registers
+	EXTI->IMR = 	0x00000000;
+	EXTI->EMR = 	0x00000000;
+	EXTI->RTSR = 	0x00000000;
+	EXTI->FTSR = 	0x00000000;
+	EXTI->SWIER = 	0x00000000;
+	EXTI->PR = 		0xFFFFFFFF;
+
+	//Disable NVIC Mask
+	NVIC_IRQ6_EXTI0_Disable;
+	NVIC_IRQ7_EXTI1_Disable;
+	NVIC_IRQ8_EXTI2_Disable;
+	NVIC_IRQ9_EXTI3_Disable;
+	NVIC_IRQ10_EXTI4_Disable;
+	NVIC_IRQ23_EXTI9_5_Disable;
+	NVIC_IRQ40_EXTI15_10_Disable;
+}
+
+/**================================================================
+ * @Fn				-MCAL_EXTI_init
+ * @brief 			-Initializes EXTIxGPIO Pin and specify Trigger/Mask Condition and IRQ Callback function
+ * 					 Configuration is set based on @ref EXTI_define, @ref EXTI_Trigger_define, @ref EXTI_IRQ_define
+ * @param [in]	 	-EXTI_Config
+ * @retval 			-NONE
+ * Note				-Enable RCC Clock for AFIO & GPIO.
+ * 					 STM32F103C6 MCU has GPIO A..E but LQFP48 only has the following:
+ * 					 GPIOA & GPIOB Fully included
+ * 					 GPIOC & GPIOD Partially included
+ * 					 GPIOE not included
+ */
+void MCAL_EXTI_init(EXTI_PinConfig_t *EXTI_Config){
+	Configure_EXTI(EXTI_Config);
+}
+
+/**================================================================
+ * @Fn				-MCAL_GPIO_update
+ * @brief 			-Updates EXTIxGPIO Pin and specify Trigger/Mask Condition and IRQ Callback function
+ * 					 Configuration is set based on @ref EXTI_define, @ref EXTI_Trigger_define, @ref EXTI_IRQ_define
+ * @param [in]	 	-EXTI_Config
+ * @retval 			-NONE
+ * Note				-NONE
+ */
+void MCAL_GPIO_update(EXTI_PinConfig_t *EXTI_Config){
+	Configure_EXTI(EXTI_Config);
+}
+
+
