@@ -16,8 +16,8 @@
 
 typedef struct{
 	uint16_t GPIO_PinNumber;		//Specifies Pin Number to be Configured >> @ref GPIO_PIN_def
-	uint16_t GPIO_MODE;				//Specifies Pin Number to be Configured >> @ref GPIO_MODE_def
-	uint16_t GPIO_OUTPUT_SPEED;		//Specifies Pin Number to be Configured >> @ref GPIO_OUTPUT_SPEED_def
+	uint16_t GPIO_MODE;				//Specifies Pin Mode 					>> @ref GPIO_MODE_def
+	uint16_t GPIO_OUTPUT_SPEED;		//Specifies Pin Output Speed		 	>> @ref GPIO_OUTPUT_SPEED_def
 }GPIO_PinConfig_t;
 
 

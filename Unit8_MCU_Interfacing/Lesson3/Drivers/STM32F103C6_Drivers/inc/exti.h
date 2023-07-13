@@ -24,9 +24,9 @@ typedef struct{
 }EXTI_GPIO_t;
 
 typedef struct{
-	EXTI_GPIO_t EXTI_PIN;					//Specifies EXTIxGPIO Mapping based on @ref EXTI_define
-	uint8_t		Trigger;					//Specifies Rising/Falling/Both based on @ref EXTI_Trigger_define
-	uint8_t		IRQ_EN;						//Enable and Disable EXIT and NVIC Mask based on @ref EXTI_IRQ_define
+	EXTI_GPIO_t EXTI_PIN;					//Specifies EXTIxGPIO Mapping 			>> @ref EXTI_define
+	uint8_t		Trigger;					//Specifies Rising/Falling/Both 		>> @ref EXTI_Trigger_define
+	uint8_t		IRQ_EN;						//Enable and Disable EXIT and NVIC Mask >> @ref EXTI_IRQ_define
 	void		(*P_IRQ_CallBack)(void);	//Set CallBack function when IRQ occurs
 }EXTI_PinConfig_t;
 

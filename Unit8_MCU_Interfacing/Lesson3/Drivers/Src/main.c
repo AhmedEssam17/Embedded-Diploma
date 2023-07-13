@@ -26,14 +26,9 @@
 #include "lcd.h"
 #include "keypad.h"
 #include "exti.h"
+#include "usart.h"
 
-uint32_t IRQ_Flag = 0;
-
-void delay_ms(uint32_t n){
-	int i, j;
-	for(i = 0; i < n; i++)
-		for(j = 0; j < 255; j++);
-}
+uint8_t ch;
 
 void Clock_init(){
 	RCC_GPIOA_CLK_ENABLE();
@@ -41,31 +36,28 @@ void Clock_init(){
 	RCC_AFIO_CLK_ENABLE();
 }
 
-void EXTI9_CallBack(){
-	IRQ_Flag = 1;
-	LCD_WriteString("EXTI9 IRQ _|-");
-	delay_ms(1000);
+void UART_IRQ_CallBack(void){
+	MCAL_UART_ReceiveData(USART1, &ch, disable);
+	MCAL_UART_SendData(USART1, &ch, enable);
 }
 
 int main(void)
 {
+	USART_Config_t UARTConfig;
+
 	Clock_init();
-	LCD_INIT();
-	LCD_ClearScreen();
 
-	EXTI_PinConfig_t EXTI_Config;
-	EXTI_Config.EXTI_PIN = EXTI9PB9;
-	EXTI_Config.Trigger = EXTI_Trigger_Rising;
-	EXTI_Config.IRQ_EN = EXTI_IRQ_Enable;
-	EXTI_Config.P_IRQ_CallBack = EXTI9_CallBack;
-	MCAL_EXTI_init(&EXTI_Config);
+	UARTConfig.USART_BaudRate = USART_BaudRate_115200;
+	UARTConfig.USART_HwFlowCtrl = USART_HwFlowCtrl_NONE;
+	UARTConfig.USART_Parity = USART_Parity_NONE;
+	UARTConfig.USART_StopBit = USART_StopBit_1;
+	UARTConfig.USART_PayLoad = USART_Payload_8B;
+	UARTConfig.USART_MODE = USART_MODE_TX_RX;
+	UARTConfig.USART_IRQ_EN = USART_IRQ_EN_RXNEIE;
+	UARTConfig.P_IRQ_CallBack = UART_IRQ_CallBack;
 
-	IRQ_Flag = 1;
+	MCAL_UART_init(USART1, &UARTConfig);
+	MCAL_UART_GPIO_SetPin(USART1);
 
-	while(1){
-		if(IRQ_Flag){
-			LCD_ClearScreen();
-			IRQ_Flag = 0;
-		}
-	}
+	while(1);
 }

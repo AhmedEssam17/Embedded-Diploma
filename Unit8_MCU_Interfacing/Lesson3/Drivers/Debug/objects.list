@@ -2,6 +2,8 @@
 "HAL_Drivers/lcd.o"
 "STM32F103C6_Drivers/exti.o"
 "STM32F103C6_Drivers/gpio.o"
+"STM32F103C6_Drivers/rcc.o"
+"STM32F103C6_Drivers/usart.o"
 "Src/main.o"
 "Src/syscalls.o"
 "Src/sysmem.o"

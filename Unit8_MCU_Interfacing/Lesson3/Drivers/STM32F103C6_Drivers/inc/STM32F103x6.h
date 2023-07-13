@@ -69,10 +69,16 @@
 //AFIO Base Address
 #define AFIO_BASE 		0x40010000UL
 
+//USART1 Base Address
+#define USART1_BASE		0x40013800UL
+
 //-----------------------------
 //Base addresses for APB1 Bus
 //-----------------------------
 
+//USART2 & USART3 Base Address
+#define USART2_BASE		0x40004400UL
+#define USART3_BASE		0x40004800UL
 
 
 //====================================================================
@@ -118,6 +124,16 @@ typedef struct{
 	volatile uint32_t PR;
 }EXTI_t;
 
+typedef struct{
+	volatile uint32_t SR;
+	volatile uint32_t DR;
+	volatile uint32_t BRR;
+	volatile uint32_t CR1;
+	volatile uint32_t CR2;
+	volatile uint32_t CR3;
+	volatile uint32_t GTPR;
+}USART_t;
+
 //-----------------------------
 //Peripheral register (RCC)
 //-----------------------------
@@ -151,6 +167,11 @@ typedef struct{
 #define EXTI			((EXTI_t *)	EXTI_BASE)
 #define AFIO			((AFIO_t *)	AFIO_BASE)
 
+#define USART1 			((USART_t *)USART1_BASE)
+#define USART2 			((USART_t *)USART2_BASE)
+#define USART3 			((USART_t *)USART3_BASE)
+
+
 //====================================================================
 //						Clock Enable Macros
 //====================================================================
@@ -162,8 +183,16 @@ typedef struct{
 #define RCC_GPIOE_CLK_ENABLE()	(RCC->APB2ENR |= 1<<6)
 #define RCC_AFIO_CLK_ENABLE()	(RCC->APB2ENR |= 1<<0)
 
+#define RCC_USART1_CLK_ENABLE()	(RCC->APB2ENR |= 1<<14)
+#define RCC_USART2_CLK_ENABLE()	(RCC->APB1ENR |= 1<<17)
+#define RCC_USART3_CLK_ENABLE()	(RCC->APB1ENR |= 1<<18)
+
+#define RCC_USART1_CLK_RESET()	(RCC->APB2RSTR |= 1<<14)
+#define RCC_USART2_CLK_RESET()	(RCC->APB1RSTR |= 1<<17)
+#define RCC_USART3_CLK_RESET()	(RCC->APB1RSTR |= 1<<18)
+
 //====================================================================
-//					EXTIxIRQ Interrupt Vector Table
+//						IRQ Interrupt Vector Table
 //====================================================================
 
 #define EXTI0_IRQ		6
@@ -183,6 +212,10 @@ typedef struct{
 #define EXTI14_IRQ		40
 #define EXTI15_IRQ		40
 
+#define USART1_IRQ		37
+#define USART2_IRQ		38
+#define USART3_IRQ		39
+
 //====================================================================
 //					NVIC IRQ Enable/Disable Macros
 //====================================================================
@@ -196,6 +229,10 @@ typedef struct{
 #define NVIC_IRQ23_EXTI9_5_Enable			(NVIC_ISER0 |= 1<<23)
 #define NVIC_IRQ40_EXTI15_10_Enable			(NVIC_ISER1 |= 1<<8)
 
+#define NVIC_IRQ37_USART1_Enable			(NVIC_ISER1 |= 1<< (USART1_IRQ - 32))
+#define NVIC_IRQ38_USART2_Enable			(NVIC_ISER1 |= 1<< (USART2_IRQ - 32))
+#define NVIC_IRQ39_USART3_Enable			(NVIC_ISER1 |= 1<< (USART3_IRQ - 32))
+
 //NVIC IRQ Disable
 #define NVIC_IRQ6_EXTI0_Disable				(NVIC_ICER0 |= 1<<6)
 #define NVIC_IRQ7_EXTI1_Disable				(NVIC_ICER0 |= 1<<7)
@@ -204,5 +241,9 @@ typedef struct{
 #define NVIC_IRQ10_EXTI4_Disable			(NVIC_ICER0 |= 1<<10)
 #define NVIC_IRQ23_EXTI9_5_Disable			(NVIC_ICER0 |= 1<<23)
 #define NVIC_IRQ40_EXTI15_10_Disable		(NVIC_ICER1 |= 1<<8)
+
+#define NVIC_IRQ37_USART1_Disable			(NVIC_ICER1 |= 1<< (USART1_IRQ - 32))
+#define NVIC_IRQ38_USART2_Disable			(NVIC_ICER1 |= 1<< (USART2_IRQ - 32))
+#define NVIC_IRQ39_USART3_Disable			(NVIC_ICER1 |= 1<< (USART3_IRQ - 32))
 
 #endif /* INC_STM32F103X6_H_ */

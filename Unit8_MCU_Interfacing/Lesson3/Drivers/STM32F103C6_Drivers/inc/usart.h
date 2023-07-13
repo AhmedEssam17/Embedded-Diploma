@@ -59,7 +59,7 @@ typedef struct {
 //-----------------------------
 
 #define USART_Payload_8B				(uint32_t)(0)
-#define USART_Payload_8B				(uint32_t)(1<<12)
+#define USART_Payload_9B				(uint32_t)(1<<12)
 
 //-----------------------------
 //@ref USART_Parity_def
@@ -97,10 +97,28 @@ typedef struct {
 #define USART_IRQ_EN_RXNEIE				(uint32_t)(1<<5)
 #define USART_IRQ_EN_PE					(uint32_t)(1<<8)
 
+enum PollingMechanism{enable, disable};
+
+//====================================================================
+//						BaudRate Calculations
+//====================================================================
+
+#define USARTDIV(_PCLK_, _BAUD_)			(uint32_t)(_PCLK_ / (16 * _BAUD_))
+#define USARTDIV_MUL100(_PCLK_, _BAUD_)		(uint32_t)((25 * _PCLK_) / (4 * _BAUD_))
+#define Mantissa_MUL100(_PCLK_, _BAUD_)		(uint32_t)(USARTDIV(_PCLK_, _BAUD_) * 100)
+#define Mantissa(_PCLK_, _BAUD_)			(uint32_t)(USARTDIV(_PCLK_, _BAUD_))
+#define DIV_FRACTION(_PCLK_, _BAUD_)		(uint32_t)(((USARTDIV_MUL100(_PCLK_, _BAUD_) - Mantissa_MUL100(_PCLK_, _BAUD_)) * 16) / 100)
+#define UART_BRR_Register(_PCLK_, _BAUD_)	(((Mantissa(_PCLK_, _BAUD_)) << 4) | ((DIV_FRACTION(_PCLK_, _BAUD_)) & 0xF))
+
 //====================================================================
 //					APIs Supported by MCAL GPIO Driver
 //====================================================================
 
 void MCAL_UART_init(USART_t* UARTx, USART_Config_t* UART_Config);
+void MCAL_UART_deinit(USART_t* UARTx);
+void MCAL_UART_GPIO_SetPin(USART_t* UARTx);
+void MCAL_UART_SendData(USART_t* UARTx, uint16_t* pTxBuffer, enum PollingMechanism PollingEn);
+void MCAL_UART_ReceiveData(USART_t* UARTx, uint16_t* pRxBuffer, enum PollingMechanism PollingEn);
+void MCAL_UART_WAIT_TC(USART_t* UARTx);
 
 #endif /* INC_USART_H_ */

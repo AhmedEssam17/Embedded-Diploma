@@ -14,13 +14,6 @@
 USART_Config_t* GP_UART_Config = NULL;
 
 //====================================================================
-//						Generic Functions
-//====================================================================
-
-
-
-
-//====================================================================
 //						APIs Functions Definitions
 //====================================================================
 
@@ -137,7 +130,7 @@ void MCAL_UART_GPIO_SetPin(USART_t* UARTx){
 
 	GPIO_PinConfig_t PinConfig;
 
-	if(UARTx == UART1){
+	if(UARTx == USART1){
 		//PA9 TX
 		PinConfig.GPIO_PinNumber = GPIO_PIN_9;
 		PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_AF_PP;
@@ -164,7 +157,7 @@ void MCAL_UART_GPIO_SetPin(USART_t* UARTx){
 			MCAL_GPIO_init(GPIOA, &PinConfig);
 		}
 	}
-	else if(UARTx == UART2){
+	else if(UARTx == USART2){
 		//PA2 TX
 		PinConfig.GPIO_PinNumber = GPIO_PIN_2;
 		PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_AF_PP;
@@ -191,7 +184,7 @@ void MCAL_UART_GPIO_SetPin(USART_t* UARTx){
 			MCAL_GPIO_init(GPIOA, &PinConfig);
 		}
 	}
-	else if(UARTx == UART3){
+	else if(UARTx == USART3){
 		//PB10 TX
 		PinConfig.GPIO_PinNumber = GPIO_PIN_10;
 		PinConfig.GPIO_MODE = GPIO_MODE_OUTPUT_AF_PP;
@@ -272,22 +265,22 @@ void MCAL_UART_ReceiveData(USART_t* UARTx, uint16_t* pRxBuffer, enum PollingMech
 		//For 9 Bits
 		if(GP_UART_Config->USART_Parity == USART_Parity_NONE){
 			//No Parity == All 9 bits are Data
-			*((uint16_t)pRxBuffer) = UARTx->DR;
+			*((uint16_t*)pRxBuffer) = UARTx->DR;
 		}
 		else{
 			//Parity == Only 8 bits are Data
-			*((uint16_t)pRxBuffer) = (UARTx->DR & (uint8_t)0xFF);
+			*((uint16_t*)pRxBuffer) = (UARTx->DR & (uint8_t)0xFF);
 		}
 	}
 	else{
 		//For 8 Bits
 		if(GP_UART_Config->USART_Parity == USART_Parity_NONE){
 			//No Parity == All 8 bits are Data
-			*((uint16_t)pRxBuffer) = (UARTx->DR & (uint8_t)0xFF);
+			*((uint16_t*)pRxBuffer) = (UARTx->DR & (uint8_t)0xFF);
 		}
 		else{
 			//Parity == Only 7 bits are Data
-			*((uint16_t)pRxBuffer) = (UARTx->DR & (uint8_t)0x7F);
+			*((uint16_t*)pRxBuffer) = (UARTx->DR & (uint8_t)0x7F);
 		}
 	}
 }
@@ -310,7 +303,15 @@ void MCAL_UART_WAIT_TC(USART_t* UARTx){
 //====================================================================
 
 void USART1_IRQHandler(void){
+	GP_UART_Config->P_IRQ_CallBack();
+}
 
+void USART2_IRQHandler(void){
+	GP_UART_Config->P_IRQ_CallBack();
+}
+
+void USART3_IRQHandler(void){
+	GP_UART_Config->P_IRQ_CallBack();
 }
 
 

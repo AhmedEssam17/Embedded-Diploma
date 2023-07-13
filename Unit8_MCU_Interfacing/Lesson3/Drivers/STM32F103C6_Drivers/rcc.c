@@ -67,5 +67,6 @@ uint32_t MCAL_RCC_getSYSCLK(void){
 		return 16000000;
 		break;
 	}
+	return HSI_RC_CLK;
 }
 
